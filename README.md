@@ -40,7 +40,7 @@ Le formulaire est prêt mais pas encore branché. Une fois le formulaire créé 
 ## Reste à compléter
 
 - [ ] Mentions légales : adresse et SIREN de l'EI.
-- [ ] Adresse de contact : le site affiche `contact@enquetesnaturistes.fr`, à créer (redirection vers la boîte habituelle) chez le registrar.
+- [x] Adresse de contact : `contact@enquetesnaturistes.fr`, redirection OVH vers la boîte habituelle (MX chez OVH : ne pas les modifier en branchant Vercel).
 - [ ] Lien Amazon direct du tome 1.5 (le site pointe pour l'instant vers une recherche Amazon).
 - [ ] Logo des Éditions Naturistes (pas encore sur le site).
 - [ ] Images en haute définition : scène de terrasse du tome 1 sans texte, couvertures définitives.
