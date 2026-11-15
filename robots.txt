@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enquetesnaturistes.fr/sitemap.xml

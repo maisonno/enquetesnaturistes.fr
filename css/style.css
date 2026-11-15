@@ -1,0 +1,206 @@
+/* Enquêtes naturistes — feuille de style unique
+   Couleurs et polices : charte « Enquêtes naturistes » (voir le projet Claude). */
+
+@font-face{font-family:"Dancing Script";src:url(../fonts/dancing-script-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Dancing Script";src:url(../fonts/dancing-script-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Mouse Memoirs";src:url(../fonts/mouse-memoirs-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Barlow Condensed";src:url(../fonts/barlow-condensed-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+
+:root{
+  --serie-bleu:#2e50a8; --marine:#1f406e; --nuit:#102e62;
+  --creme:#fcefe2; --pave:#f0dfcb; --terracotta:#ee9e83; --ciel:#a3cde4;
+  --orange:#ffa500; --jaune:#fcab18; --accent-encre:#a85a00; --prix:#0161bf;
+  --script:"Dancing Script",cursive;
+  --display:"Mouse Memoirs","Barlow Condensed","Arial Narrow",sans-serif;
+  --condensed:"Barlow Condensed","Arial Narrow",sans-serif;
+  --text:Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);font-size:17px;line-height:1.55;color:var(--marine);background:var(--creme)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--marine)}a:hover{color:var(--serie-bleu)}
+h1,h2,h3{margin:0;font-weight:400}
+p{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.narrow{max-width:1100px}
+.stack{display:flex;flex-direction:column;gap:18px}
+.center{text-align:center;align-items:center}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;background:#fff;padding:8px;z-index:10}
+
+/* Typo de série */
+.script{font-family:var(--script);font-weight:700}
+.display{font-family:var(--display);letter-spacing:.03em}
+.condensed{font-family:var(--condensed);font-weight:700}
+.section-title{font-family:var(--display);font-size:clamp(44px,6vw,64px);line-height:1;color:var(--serie-bleu);letter-spacing:.02em}
+.eyebrow{font-family:var(--display);font-size:26px;letter-spacing:.05em;line-height:1}
+.lead{font-size:19px}
+.accent{color:var(--accent-encre)}
+
+/* Boutons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;font-weight:700;text-decoration:none;border:2px solid transparent;font-family:var(--text);font-size:17px;cursor:pointer;line-height:1.2}
+.btn-marine{background:var(--marine);color:#fff}.btn-marine:hover{background:var(--nuit);color:#fff}
+.btn-nuit{background:var(--nuit);color:#fff}.btn-nuit:hover{background:#0a1f45;color:#fff}
+.btn-jaune{background:var(--jaune);color:var(--nuit)}.btn-jaune:hover{background:#ffbf47;color:var(--nuit)}
+.btn-orange{background:var(--orange);color:var(--nuit)}.btn-orange:hover{background:#ffb833;color:var(--nuit)}
+.btn-ligne{border-color:var(--marine);color:var(--marine);background:transparent}.btn-ligne:hover{background:var(--marine);color:#fff}
+.btn-ligne-blanc{border-color:#fff;color:#fff;background:transparent}.btn-ligne-blanc:hover{background:#fff;color:var(--nuit)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* En-tête */
+.site-header{background:var(--nuit);color:#fff}
+.site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-top:16px;padding-bottom:16px}
+.brand{color:#fff;text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.brand:hover{color:#fff}
+.brand-name{font-family:var(--condensed);font-weight:700;font-size:30px}
+.brand-sub{font-family:var(--display);font-size:15px;letter-spacing:.09em;margin-top:3px}
+.nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 24px}
+.nav a{color:#fff;font-weight:700;text-decoration:none;padding:6px 0}
+.nav a:hover,.nav a[aria-current=page]{text-decoration:underline;text-underline-offset:6px;color:#fff}
+.nav .btn{padding:10px 18px;min-height:44px}
+
+/* Pastille de tome */
+.pastille{width:46px;height:46px;flex:none;border-radius:9999px;background:#fff;border:3px solid var(--serie-bleu);display:inline-flex;align-items:center;justify-content:center;font-family:var(--condensed);font-weight:700;font-size:22px;letter-spacing:-.05em;color:var(--serie-bleu)}
+.pastille.small-text{font-size:17px}
+.tome-line{display:flex;align-items:center;gap:12px}
+
+/* Accueil — une */
+.une{background-color:var(--nuit);background-image:url(../img/t15-ciel.webp);background-size:cover;background-position:center top;color:#fff}
+.une .wrap{max-width:980px;padding-top:44px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.badge{background:var(--jaune);color:var(--nuit);font-family:var(--display);font-size:24px;line-height:1;letter-spacing:.05em;padding:8px 14px}
+.titre-bloc{display:flex;flex-direction:column;align-items:center}
+.titre-bloc .t-script{font-family:var(--script);font-weight:700;font-size:clamp(60px,10vw,108px);line-height:.95}
+.titre-bloc .t-caps{font-family:var(--display);font-size:clamp(52px,8.5vw,90px);line-height:.9}
+.titre-bloc .t-sous{font-family:var(--condensed);font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1.1;margin-top:6px}
+.une .tagline{font-family:var(--condensed);font-weight:700;font-size:clamp(24px,2.6vw,30px);line-height:1.15}
+.une .btns{justify-content:center;margin-top:8px}
+.scene{width:100%}
+
+/* Guirlande */
+.guirlande{display:block;width:100%;height:56px}
+
+/* Grille des livres */
+.livres{padding:40px 0 100px}
+.livres-grille{display:flex;flex-wrap:wrap;gap:48px 40px;justify-content:center;margin-top:48px}
+.carte-livre{flex:1 1 290px;max-width:360px;display:flex;flex-direction:column;gap:16px}
+.couv{position:relative}
+.couv img.cover{width:100%}
+.macaron{position:absolute;top:-30px;right:-44px;width:112px}
+.etiquette{position:absolute;right:14px;bottom:14px;background:#9a3634;color:#fff;font-family:var(--display);font-size:22px;letter-spacing:.04em;padding:6px 12px}
+.carte-livre h3{font-family:var(--condensed);font-weight:700;font-size:24px;line-height:1.1}
+.carte-livre .accroche{font-family:var(--condensed);font-weight:700;font-size:27px;line-height:1.12}
+
+/* Bandeaux colorés */
+.bande{padding:88px 0}
+.bande-creme{background:var(--creme)}
+.bande-pave{background:var(--pave)}
+.bande-ciel{background:var(--ciel)}
+.bande-terracotta{background:var(--terracotta)}
+.bande-orange{background:var(--orange)}
+.duo{display:flex;flex-wrap:wrap;align-items:center;gap:48px}
+.duo > .texte{flex:1 1 460px;min-width:0}
+.duo > .visuel{flex:0 1 300px;min-width:0;display:flex;justify-content:center}
+.duo.bas{align-items:flex-end}
+.bande.bas-0{padding-bottom:0}
+.duo .visuel.pied{padding-bottom:0}
+.duo .texte.pied{padding-bottom:72px}
+.grand-titre{font-family:var(--condensed);font-weight:700;font-size:clamp(40px,5vw,58px);line-height:1.02}
+.grand-titre .script{font-size:1.2em}
+.prix-ligne{display:flex;flex-wrap:wrap;align-items:center;gap:20px}
+.prix-gros{font-weight:700;font-size:28px}
+
+/* Cartes d'info */
+.cartes{display:flex;flex-wrap:wrap;gap:28px;margin-top:40px}
+.carte{flex:1 1 300px;min-width:0;background:#fff;padding:30px;display:flex;flex-direction:column;gap:8px}
+.carte.terracotta{background:var(--terracotta)}
+.carte .eyebrow{color:var(--serie-bleu);font-size:28px}
+.carte.terracotta .eyebrow{color:var(--marine)}
+.carte h3{font-weight:700;font-size:20px;font-family:var(--text)}
+.carte ul{margin:4px 0 0;padding-left:20px}
+
+/* Newsletter */
+.newsletter{background:var(--orange);color:var(--nuit);padding:72px 0}
+.newsletter h2{font-family:var(--condensed);font-weight:700;font-size:clamp(38px,4.6vw,52px);line-height:1.05}
+.newsletter h2 .script{font-size:1.25em}
+.form-nl{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.form-nl label{font-weight:700}
+.form-nl .champ{display:flex;flex-wrap:wrap;gap:12px}
+.form-nl input[type=email]{flex:1 1 240px;min-width:0;min-height:52px;padding:0 16px;border:2px solid var(--nuit);border-radius:0;font-size:17px;font-family:var(--text);color:var(--nuit);background:#fff}
+.form-nl button{min-height:52px;border:0;border-radius:0}
+.petit{font-size:14px}
+
+/* Pied de page */
+.site-footer{background:var(--nuit);color:#fff;padding:44px 0}
+.site-footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.site-footer a{color:#fff}
+.site-footer nav{display:flex;flex-wrap:wrap;gap:22px}
+.site-footer .copy{width:100%;font-size:14px}
+
+/* Page livre */
+.fil{font-size:15px;padding-top:18px}
+.livre-une{background:var(--pave);padding-bottom:80px}
+.livre-une .grille{display:flex;flex-wrap:wrap;align-items:flex-start;gap:56px;padding-top:32px}
+.livre-une .col-couv{flex:0 1 420px;padding:0 24px 24px 0}
+.livre-une .col-info{flex:1 1 460px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.couv-posee{position:relative;max-width:420px}
+.couv-posee .ombre{position:absolute;left:24px;top:24px;right:-24px;bottom:-24px;background:var(--terracotta)}
+.couv-posee img.cover{position:relative;width:100%}
+.couv-posee .macaron{width:156px;top:-34px;right:-38px}
+.livre-titre{display:flex;flex-direction:column}
+.livre-titre .t-script{font-family:var(--script);font-weight:700;font-size:clamp(64px,8vw,96px);line-height:.95}
+.livre-titre .t-caps{font-family:var(--display);font-size:clamp(54px,7vw,80px);line-height:.9}
+.livre-titre .t-sous{font-family:var(--condensed);font-weight:700;font-size:clamp(30px,3.4vw,40px);line-height:1.05;margin-top:8px}
+.signature{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}
+.signature .script{font-weight:400;font-size:26px}
+.signature .condensed{font-size:28px}
+.achat{background:#fff;padding:26px;display:flex;flex-direction:column;gap:18px}
+.achat .ligne{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}
+.achat .format{display:flex;flex-direction:column}
+.achat .prix{font-weight:700;font-size:22px;color:var(--prix)}
+.fiche{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;font-size:15px}
+.fiche dt{font-weight:700}.fiche dd{margin:0}
+.quatrieme .accroche{font-family:var(--condensed);font-weight:700;font-size:clamp(40px,5vw,54px);line-height:1.08;margin-bottom:6px}
+.quatrieme .accroche .script{font-size:1.22em;color:var(--accent-encre)}
+.quatrieme p{font-size:19px}
+.quatrieme strong{color:var(--accent-encre)}
+.extrait-papier{background:#fff;padding:clamp(24px,5vw,56px);display:flex;flex-direction:column;gap:14px}
+.extrait-papier .chap{font-family:var(--script);font-weight:700;font-size:40px;line-height:1}
+.extrait-papier p{font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.75}
+.extrait-papier hr{border:0;text-align:center;margin:10px 0}
+.extrait-papier hr::after{content:"* * *";letter-spacing:.4em}
+details.suite summary{cursor:pointer;font-weight:700;padding:12px 0;font-family:var(--text);list-style:none;color:var(--marine)}
+details.suite summary::-webkit-details-marker{display:none}
+details.suite summary::before{content:"▸ "}
+details.suite[open] summary{display:none}
+details.suite > div{display:flex;flex-direction:column;gap:14px}
+.tomes-nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+.tome-lien{display:flex;align-items:center;gap:18px;text-decoration:none;color:#fff;background:var(--nuit);padding:18px 28px 18px 18px;min-width:290px}
+.tome-lien:hover{color:#fff;background:#0a1f45}
+.tome-lien img{width:68px}
+.tome-lien .script{font-size:32px;line-height:1}
+.tome-lien .display{font-size:26px;line-height:1;color:var(--jaune)}
+
+/* Pages de texte */
+.page-titre{background:var(--nuit);color:#fff;padding:56px 0}
+.page-titre h1{font-family:var(--display);font-size:clamp(48px,7vw,76px);line-height:1;letter-spacing:.02em}
+.page-titre p{font-size:19px;margin-top:10px;max-width:720px}
+.contenu{padding:72px 0}
+.contenu h2{font-family:var(--display);font-size:40px;line-height:1;color:var(--serie-bleu);margin-top:40px}
+.contenu h2:first-child{margin-top:0}
+.contenu p,.contenu ul{max-width:760px}
+.contenu ul{padding-left:22px}
+.contenu .stack{gap:14px}
+.telecharger{display:flex;flex-wrap:wrap;gap:24px;margin-top:16px}
+.telecharger a{display:flex;flex-direction:column;gap:8px;width:170px;text-decoration:none;font-weight:700;font-size:15px}
+.telecharger img{width:170px;height:240px;object-fit:contain;background:#fff;padding:8px}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  .bande{padding:64px 0}
+  .macaron{width:96px;top:-18px;right:-12px}
+  .couv-posee .macaron{width:112px;top:-22px;right:-18px}
+  .livre-une .col-couv{padding:0 24px 24px 0}
+  .duo .texte.pied{padding-bottom:40px}
+  .tome-lien{min-width:0;width:100%}
+}
