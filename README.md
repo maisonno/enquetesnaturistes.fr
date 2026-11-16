@@ -32,10 +32,9 @@ Chaque modification envoyée sur la branche `main` est mise en ligne automatique
 
 ## Newsletter (Brevo)
 
-Le formulaire est prêt mais pas encore branché. Une fois le formulaire créé dans Brevo (double confirmation activée, redirection après inscription vers `https://enquetesnaturistes.fr/merci`) :
+Le formulaire est branché sur Brevo (liste « Lecteurs », double opt-in). Après inscription : `/merci` ; après confirmation : `/bienvenue`.
 
-- remplacer `action=""` par l'adresse d'envoi du formulaire Brevo dans chaque page (rechercher `BREVO`) ;
-- garder le champ `name="EMAIL"` (c'est le nom attendu par Brevo).
+Dans chaque page, le formulaire envoie vers l'adresse `sibforms.com` du formulaire Brevo. Garder le champ `name="EMAIL"` et le champ caché anti-robots `email_address_check`.
 
 ## Reste à compléter
 

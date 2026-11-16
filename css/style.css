@@ -204,3 +204,4 @@ details.suite > div{display:flex;flex-direction:column;gap:14px}
   .duo .texte.pied{padding-bottom:40px}
   .tome-lien{min-width:0;width:100%}
 }
+.pot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
