@@ -39,7 +39,7 @@ Le formulaire est prêt mais pas encore branché. Une fois le formulaire créé 
 
 ## Reste à compléter
 
-- [ ] Mentions légales : adresse et SIREN de l'EI.
+- [x] Mentions légales : adresse et SIRET.
 - [x] Adresse de contact : `contact@enquetesnaturistes.fr`, redirection OVH vers la boîte habituelle (MX chez OVH : ne pas les modifier en branchant Vercel).
 - [ ] Lien Amazon direct du tome 1.5 (le site pointe pour l'instant vers une recherche Amazon).
 - [ ] Logo des Éditions Naturistes (pas encore sur le site).
