@@ -75,6 +75,7 @@ p{margin:0}
 .une .tagline{font-family:var(--condensed);font-weight:700;font-size:clamp(24px,2.6vw,30px);line-height:1.15}
 .une .btns{justify-content:center;margin-top:8px}
 .scene{width:100%}
+.une .scene{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 22%);mask-image:linear-gradient(to bottom,transparent 0,#000 22%)}
 
 /* Guirlande */
 .guirlande{display:block;width:100%;height:56px}
