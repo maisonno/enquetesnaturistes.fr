@@ -40,7 +40,7 @@ Dans chaque page, le formulaire envoie vers l'adresse `sibforms.com` du formulai
 
 - [x] Mentions légales : adresse et SIRET.
 - [x] Adresse de contact : `contact@enquetesnaturistes.fr`, redirection OVH vers la boîte habituelle (MX chez OVH : ne pas les modifier en branchant Vercel).
-- [ ] Lien Amazon direct du tome 1.5 (le site pointe pour l'instant vers une recherche Amazon).
+- [x] Lien Amazon direct du tome 1.5.
 - [ ] Logo des Éditions Naturistes (pas encore sur le site).
 - [ ] Images en haute définition : scène de terrasse du tome 1 sans texte, couvertures définitives.
 - [ ] Page Facebook, si elle doit apparaître.
